@@ -1,0 +1,28 @@
+div[class^="box"] {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  background: repeating-linear-gradient(
+    180deg,
+    #008000,
+    #008000 10px,
+    #fff 10px,
+    #fff 20px
+  );
+}
+
+.box2 {
+  background: linear-gradient(
+    135deg,
+    #000 20%,
+    #d3d3d3 20%,
+    #d3d3d3 80%,
+    #000 80%
+  );
+}
+
+.box3 {
+  background: radial-gradient(circle, #f00, #f00 15px, #000 15px);
+}
