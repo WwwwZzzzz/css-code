@@ -1,0 +1,71 @@
+.box {
+  width: 13em;
+  height: 13em;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 14em / 4em;
+  position: relative;
+  animation: color 1.4s linear infinite;
+}
+
+.heart {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 100px;
+  animation: pulsate 1.4s linear infinite;
+}
+
+.div {
+  animation: size 1.4s linear infinite;
+}
+
+@keyframes color {
+  from {
+    color: #f00;
+  }
+  to {
+    color: #fb4500;
+  }
+}
+
+@keyframes size {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    text-shadow: rgb(221, 19, 46) 0 0 0.03em, rgb(237, 21, 50) 0 0 0.1em,
+      rgb(237, 21, 50) 0 0 0.1em;
+  }
+  15% {
+    text-shadow: rgb(221, 19, 46) 0 0 0.03em, rgb(237, 21, 50) 0 0 0.1em,
+      rgb(237, 21, 50) 0 0 0.2em;
+  }
+  25% {
+    text-shadow: rgb(221, 19, 46) 0 0 0.03em, rgb(237, 21, 50) 0 0 0.1em,
+      rgb(237, 21, 50) 0 0 0.04em;
+  }
+
+  35% {
+    text-shadow: rgb(221, 19, 46) 0 0 0.03em, rgb(237, 21, 50) 0 0 0.3em,
+      rgb(237, 21, 50) 0 0 0.16em;
+  }
+  65% {
+    text-shadow: rgb(255, 109, 131) 0 0 0.03em, rgb(237, 21, 50) 0 0 0.2em,
+      rgb(237, 21, 50) 0 0 0.1em;
+  }
+  100% {
+    text-shadow: rgb(255, 109, 131) 0 0 0.03em, rgb(237, 21, 50) 0 0 0.2em,
+      rgb(237, 21, 50) 0 0 0.2em;
+  }
+}
