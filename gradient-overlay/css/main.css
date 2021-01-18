@@ -1,0 +1,11 @@
+.linear-gradient {
+  width: 450px;
+  height: 349px;
+  background: linear-gradient(
+      45deg,
+      rgba(111, 117, 225, 0.4) 30%,
+      rgba(222, 102, 128, 0.5) 70%,
+      rgba(219, 235, 80, 0.7) 90%
+    ),
+    url("../img/lion.jpg"), no-repeat;
+}
