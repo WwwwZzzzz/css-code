@@ -1,0 +1,61 @@
+main {
+  width: 700px;
+  height: 600px;
+  background-color: #0d5825;
+  position: absolute;
+}
+
+blockquote p,
+blockquote footer {
+  font: bold 25px Georgia, serif;
+  font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+p:before {
+  content: "\201c";
+}
+
+p:after {
+  content: "\201d";
+}
+
+blockquote footer {
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 30px 0 3px;
+}
+
+.card {
+  width: 150px;
+  border-radius: 10px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.images-position {
+  height: 300px;
+  position: relative;
+  padding-top: 120px;
+}
+
+.first {
+  left: 250px;
+  transform: translateY(5%) rotate(-20deg);
+}
+
+.second {
+  left: 300px;
+  transform: translateY(2%) rotate(-10deg);
+}
+
+.third {
+  left: 355px;
+  transform: translateY(8%) rotate(7deg);
+}
+
+.card:hover {
+  margin-top: -20px;
+}
