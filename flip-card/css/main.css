@@ -1,0 +1,187 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 500 16px/1.2 "Raleway", Verdana, sans-serif;
+}
+
+.wrapper-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.header {
+  background-color: #d3b714;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-menu {
+  word-spacing: 1em;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-menu a:hover {
+  color: #d3144d;
+}
+
+.wrapper-content {
+  display: flex;
+  flex: 1;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 35px 30px;
+  text-align: center;
+  order: 2;
+}
+
+.main p:first-child {
+  margin-bottom: 40px;
+  text-indent: 20px;
+}
+
+.panel {
+  width: 210px;
+  padding: 15px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.panel a {
+  text-decoration: none;
+  color: #000;
+  width: 60px;
+  height: 20px;
+}
+
+.panel a:hover {
+  color: #d3144d;
+}
+
+.pink {
+  background-color: #c798b9;
+  order: 1;
+}
+
+.blue {
+  background-color: #9cb1c7;
+  order: 3;
+}
+
+.main h1 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.wrapper-section-work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper-work {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  transition: 0.4s;
+  transform-style: preserve-3d;
+}
+
+.wrapper-section-work:hover .wrapper-work:hover {
+  transform: rotateY(180deg);
+}
+.wrapper-text {
+  flex-grow: 1;
+}
+.work-item,
+.flip-card-back {
+  border: 2px solid #c798b9;
+  padding: 20px 10px 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back h1 {
+  flex-grow: 1;
+}
+
+.work-item h2 {
+  font-size: 23px;
+  padding: 30px 0 15px;
+}
+
+.work-item p {
+  padding-bottom: 15px;
+}
+
+.work-item img {
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 0px 0px 10px #9cb1c7;
+  border-radius: 60%;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.work-item .btn,
+.flip-card-back .btn {
+  display: flex;
+  background-color: #d3b714;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.work-item .btn a,
+.flip-card-back .btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.work-item .btn:hover,
+.flip-card-back .btn:hover {
+  background-color: #c798b9;
+  color: #fff;
+}
+
+.footer {
+  height: 30px;
+  background-color: #86ec86;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
